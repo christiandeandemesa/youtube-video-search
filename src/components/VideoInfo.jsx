@@ -1,22 +1,34 @@
 function VideoInfo(props) {
 
-    if(!props.video) return <div><h1>Loading...</h1></div>
+    // If a currVideo was not passed through props, render the below html.
+    if(!props.currVideo) return (
+        <div>
+            <h1>Please choose a video from the list.</h1>
+        </div>
+    );
     
+    // If a currVideo was passed through props...
     else {
-        const videoSrc = `https://www.youtube.com/embed/${props.video.id.videoId}`;
+
+        // The video source is an embedded youtube video that targets a specific video using its video id.
+        const videoSrc = `https://www.youtube.com/embed/${props.currVideo.id.videoId}`;
 
         return (
             <div>
                 <div>
-                    <iframe 
-                        title='Video Player'
+                    {/* iframe (inline frame) is used to embed something in an HTML document. */}
+                    <iframe
+                        // This is the video that is embedded.
                         src={videoSrc} 
-                        allowFullScreen 
+                        // Allows you to make the video full screen.
+                        allowFullScreen
                     />
                 </div>
                 <div>
-                    <p>{props.video.snippet.title}</p>
-                    <p>{props.video.snippet.description}</p>
+                    {/* This is the embedded video's title. */}
+                    <p>{props.currVideo.snippet.title}</p>
+                    {/* This is the embeded video's description. */}
+                    <p>{props.currVideo.snippet.description}</p>
                 </div>
             </div>
         )
