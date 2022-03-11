@@ -1,1 +1,54 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@200&display=swap");
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Spartan';
+}
+
+.App #left {
+  height: 100%;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(black, white);
+}
+
+.App #left #searchbar {
+  height: 30%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App #left #searchbar img {
+  height: auto;
+  width: 30%;
+}
+
+.App #left #currVideo {
+  height: 70%;
+  width: 100%;
+}
+
+.App #right {
+  height: 100%;
+  width: 50%;
+}
+
+.App #right #videos {
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(black));
+  background: linear-gradient(red, black);
+  overflow-y: scroll;
+}
+/*# sourceMappingURL=App.css.map */

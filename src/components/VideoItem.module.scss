@@ -1,0 +1,29 @@
+// Container holding one of the videos in the video list.
+#video {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 8% 0;
+
+    // Image of the video.
+    img {
+        height: 40%;
+        width: 50%;
+    }
+
+    // Title and description of the video.
+    #title, #description {
+        width: 45%;
+
+        // Title and Description.
+        span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

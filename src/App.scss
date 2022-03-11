@@ -1,2 +1,52 @@
+// Imports Google Fonts.
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@200&display=swap');
+
+// Sass Nesting.
 .App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: 'Spartan';
+
+    // Left side of the screen.
+    #left {
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(black, white);
+
+        // Top container with the youtube icon and search bar.
+        #searchbar {
+            height: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            // Youtube icon.
+            img {
+                height: auto;
+                width: 30%;
+            }
+        }
+
+        // Bottom container with the selected video.
+        #currVideo {
+            height: 70%;
+            width: 100%;
+        }
+    }
+
+    // Right side of the screen.
+    #right {
+        height: 100%;
+        width: 50%;
+        
+        // Container holding the videos list.
+        #videos {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(red, black);
+            overflow-y: scroll;
+        }
+    }
 }

@@ -1,0 +1,26 @@
+// Container holding the search bar.
+#searchbar {
+    width: 36%;
+    
+    // The form (not seen by the user).
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        // Search button.
+        button {
+            background: red;
+            color: white;
+            border-radius: 5px;
+            transition: 0.8s ease;
+
+            // Sass pseudo-class that replaces button:hover.
+            &:hover {
+                background: white;
+                color: red;
+                transition: 0.5s ease;
+            }
+        }
+    }
+}

@@ -7,7 +7,9 @@ function VideoList(props) {
     const renderedVideos = props.videos.map(video => {
 
         // Returns a VideoItem component.
-        return <VideoItem 
+        return (
+            <div id>
+                <VideoItem 
                     // All components in a collection need a unique key.
                     key={video.id.videoId} 
                     // Passes each element as props.
@@ -15,6 +17,8 @@ function VideoList(props) {
                     // Passses the handleVideoSelect again as props.
                     handleVideoSelect={props.handleVideoSelect}
                 />
+            </div>
+        )
     })
 
     return (

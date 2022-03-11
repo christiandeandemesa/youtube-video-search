@@ -1,0 +1,29 @@
+#searchbar {
+  width: 36%;
+}
+
+#searchbar form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#searchbar form button {
+  background: red;
+  color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+#searchbar form button:hover {
+  background: white;
+  color: red;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+/*# sourceMappingURL=SearchBar.module.css.map */

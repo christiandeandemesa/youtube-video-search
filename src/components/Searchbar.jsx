@@ -1,4 +1,6 @@
 import {useState} from 'react';
+// Imports this component's CSS module.
+import styles from './SearchBar.module.scss';
 
 // props are what we passed into this component from App.js.
 function Searchbar(props) {
@@ -15,11 +17,9 @@ function Searchbar(props) {
     }
 
     return (
-        <div>
+        <div id={styles.searchbar}>
             {/* When the button is clicked, this form runs the handleSubmit function. */}
             <form onSubmit={handleSubmit}>
-                {/* Label is the text next to input, and htmlFor binds it to the input's name. */}
-                <label htmlFor='video-search'>Video Search</label>
                 <input 
                     // Defines the input as a single-line text field.
                     type='text'

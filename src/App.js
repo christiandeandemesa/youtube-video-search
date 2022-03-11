@@ -8,6 +8,8 @@ import SearchBar from './components/SearchBar';
 import VideoInfo from './components/VideoInfo';
 // Imports the VideoList component which shows five videos based on the term(s) searched in the search bar.
 import VideoList from './components/VideoList';
+// Imports the Youtube icon image.
+import youtube_icon from './img/youtube.png';
 // Imports this component's stylesheet.
 import './App.scss';
 
@@ -86,16 +88,30 @@ function App() {
 
   return (
     <div className="App">
-      {/* Renders the SearchBar component and passes the handleFormSubmit function as props. */}
-      <SearchBar handleFormSubmit={handleFormSubmit} />
-      <div>
-        {/* Renders the VideoInfo component and passes the currVideo state's value as props. */}
-        <VideoInfo currVideo={currVideo} />
-        {/* Renders the VideoList component and passes the videos state's value, and handleVideoSelect function as props. */}
-        <VideoList
-          videos={videos}
-          handleVideoSelect={handleVideoSelect}
-        />
+
+      <div id='left'>
+
+        <div id='searchbar'>
+          {/* This is the Youtube icon image. */}
+          <img src={youtube_icon} alt='Youtube Icon'/>
+          {/* Renders the SearchBar component and passes the handleFormSubmit function as props. */}
+          <SearchBar handleFormSubmit={handleFormSubmit}/>
+        </div>
+        
+        <div id='currVideo'>
+          {/* Renders the VideoInfo component and passes the currVideo state's value as props. */}
+          <VideoInfo currVideo={currVideo}/>
+        </div>
+      </div>
+
+      <div id='right'>
+        <div id='videos'>
+          {/* Renders the VideoList component and passes the videos state's value, and handleVideoSelect function as props. */}
+          <VideoList
+            videos={videos}
+            handleVideoSelect={handleVideoSelect}
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,27 @@
+// The broken icon that shows if a video was not selected.
+#error {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 70%;
+        width: 65%;
+    }
+}
+
+// The video that was selected.
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    iframe {
+        height: 70%;
+        width: 85%;
+    }
+}
