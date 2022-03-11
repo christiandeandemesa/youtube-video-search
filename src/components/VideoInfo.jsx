@@ -1,3 +1,4 @@
+// Imports the broken image.
 import broken_video from '../img/broken.jpg';
 import styles from './VideoInfo.module.scss';
 
@@ -6,6 +7,7 @@ function VideoInfo(props) {
     // If a currVideo was not passed through props, render the below html.
     if(!props.currVideo) return (
         <div id={styles.error}>
+            {/* Broken image. */}
             <img src={broken_video} alt='Broken Video Icon'/>
         </div>
     );
