@@ -3,7 +3,7 @@ Looks up the five most relevant Youtube videos. The backend was built with JavaS
 
 ## How to run this project
 1. Open your terminal and type: git clone https://github.com/christiandeandemesa/youtube-video-search.git
-2. To download the dependencies, cd into the currency-calculator folder and type: npm install
+2. To download the dependencies, cd into the youtube-video-search folder and type: npm install
 3. Run this project by typing: npm start
 
 ## Features
